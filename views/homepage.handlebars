@@ -1,8 +1,10 @@
 <ol class="post-list">
+  {{#each posts}}
   <li>
     <article class="post">
       <div class="title">
-        <a href="{{post_url}}" target="_blank">{{title}}</a>
+        <a href="/post/{{id}}" target="_blank">{{title}}</a>
+        <p class="content"> {{content}} </p>
       </div>
       <div class="meta">
         Posted by {{user.username}} on
@@ -11,4 +13,5 @@
       </div>
     </article>
   </li>
+  {{/each}}
 </ol>
