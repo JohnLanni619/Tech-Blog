@@ -9,23 +9,23 @@
 </head>
 
 <body>
-  <nav>
-    <h2>
-      <a href="/">Home</a>
-    </h2>
-    <h2>
-      <a href="dashboard route">Dashboard</a>
-    </h2>
-    <h2>
-      <a href="login-route">Login</a>
-    </h2>
-  </nav>
   <div class="wrapper">
     <header>
       <h1>
         <a href="/">Just Tech Blog</a>
       </h1>
+      <nav>
+        <h2>
+          <a href="/">Home</a>
+        </h2>
+        <h2>
+          <a href="dashboard route">Dashboard</a>
+        </h2>
+        <button id="logout" class="btn-no-style">Logout</button>
+        <a href="/login">login</a>
+     </nav>
     </header>
+    
     <main>
       {{{ body }}}
     </main>
@@ -33,7 +33,8 @@
       Thanks for visiting!
     </footer>
   </div>
-
+  
+<script src="/javascript/logout.js"></script>
 </body>
 
 </html>
