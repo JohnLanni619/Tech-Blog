@@ -1,12 +1,13 @@
 <article class="post">
     <div class="title">
         <h1>
-            {{title}}
+            {{post.title}}
         </h1>
     </div>
     <p class="content">
-        {{content}}
+        {{post.content}}
     </p>
+    <p>{{ comment.comment_text }}</p>
 </article>
 
 {{!-- {{#if loggedIn}} --}}
