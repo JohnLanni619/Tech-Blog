@@ -7,10 +7,9 @@
     <p class="content">
         {{post.content}}
     </p>
-    <p>{{ comment.comment_text }}</p>
 </article>
 
-{{!-- {{#if loggedIn}} --}}
+{{#if loggedIn}}
 <form class="comment-form">
   <div>
     <textarea name="comment-body"></textarea>
@@ -20,8 +19,23 @@
     <button type="submit">add comment</button>
   </div>
 </form>
-{{!-- {{/if}} --}}
+{{/if}}
 
-{{!-- {{#if loggedIn}} --}}
-{{!-- <script src="/javascript/comment.js"></script> --}}
-{{!-- {{/if}} --}}
+<div class="comments">
+  {{#each post.comments}}
+  <section class="comment">
+    <div class="meta">
+      {{user.username}} on {{created_at}}
+    </div>
+    <div class="text">
+      {{comment_text}}
+    </div>
+  </section>
+  {{/each}}
+</div>
+
+
+
+{{#if loggedIn}} --}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
