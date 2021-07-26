@@ -14,11 +14,11 @@
   </form>
 </section>
 
-{{!-- {{#if posts.length}} --}}
+{{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
   <ol>
-    {{#each posts as |post|}}
+    {{#each posts }}
     <li>
       <article class="post">
         <div class="title">
@@ -28,13 +28,13 @@
         <div class="meta">
           Posted by {{user.username}} on
           {{format_date created_at}}
-          <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+          <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
         </div>
       </article>
     </li>
     {{/each}}
   </ol>
 </section>
-{{!-- {{/if}} --}}
+{{/if}}
 
 <script src="/javascript/add-post.js"></script>
