@@ -15,7 +15,7 @@ The goal of this project was to build a CMS-style blog site similar to a Wordpre
 ** I was unable to get my app deployed to Heroku, so I'm including a demo video.
 
 ## Links
-[Link to Demo Video](https://drive.google.com/file/d/178Asq4v_XocAaa8OWhY3TgAGveo2vqOm/view) </br>
+[Link to Deployed Application](https://radiant-gorge-54572.herokuapp.com/) </br>
 [Link to Repository](https://github.com/JohnLanni619/tech-blog)
 
 ## Screenshot
