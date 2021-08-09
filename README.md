@@ -12,8 +12,6 @@ The goal of this project was to build a CMS-style blog site similar to a Wordpre
 6. When user clicks on their existing posts, they're able to update the title or delete the post entirely
 7. When user creates a new post, their dashboard is updated and the new post is populated there
 
-** I was unable to get my app deployed to Heroku, so I'm including a demo video.
-
 ## Links
 [Link to Deployed Application](https://radiant-gorge-54572.herokuapp.com/) </br>
 [Link to Repository](https://github.com/JohnLanni619/tech-blog)
